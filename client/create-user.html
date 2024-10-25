@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Create User</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Task Manager</h1>
+            <p>Your personal task management tool</p>
+        </div>
+    </header>
+
+    <form class="user-form">
+      <h4>Create User</h4>
+      <div class="form-control">
+        <input
+          type="text"
+          name="name"
+          class="user-name-input"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div class="form-control">
+        <input
+          type="email"
+          name="email"
+          class="user-email-input"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div class="form-control">
+        <input
+          type="password"
+          name="password"
+          class="user-password-input"
+          placeholder="Password"
+          required
+        />
+      </div>
+      <button type="submit" class="btn submit-user-btn">Create User</button>
+      <div class="form-alert"></div>
+
+      <div class="login-link">
+        <p>You have an account? <a href="login.html">Log in</a></p>
+      </div>
+    </form>
+
+    <footer class="footer">
+      <p>&copy; 2024 Bogomil Dochev. All rights reserved.</p>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./create-user.js"></script>
+  </body>
+</html>
